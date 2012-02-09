@@ -63,4 +63,9 @@ Cache::config('default', array('engine' => 'File'));
  * CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
  *
  */
+define('DEFAULT_LANGUAGE', 'eng'); // The 3 letters code for your default language
+Configure::write('Config.languages', array('spa', 'fre')); //List of languages you want to support
+
+CakePlugin::load('Slugger');
+CakePlugin::load('I18n', array('routes' => true));
 CakePlugin::load('DebugKit');

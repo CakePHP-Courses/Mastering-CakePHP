@@ -1,0 +1,352 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-02-08 17:19+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/LabelsController.php:30;63;91
+msgid "Invalid label"
+msgstr ""
+
+#: Controller/LabelsController.php:44;67
+msgid "The label has been saved"
+msgstr ""
+
+#: Controller/LabelsController.php:47;70
+msgid "The label could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/LabelsController.php:94
+msgid "Label deleted"
+msgstr ""
+
+#: Controller/LabelsController.php:97
+msgid "Label was not deleted"
+msgstr ""
+
+#: Controller/PhotosController.php:57;91;120
+msgid "Invalid photo"
+msgstr ""
+
+#: Controller/PhotosController.php:71;95
+msgid "The photo has been saved"
+msgstr ""
+
+#: Controller/PhotosController.php:74;98
+msgid "The photo could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/PhotosController.php:123
+msgid "Photo deleted"
+msgstr ""
+
+#: Controller/PhotosController.php:126
+msgid "Photo was not deleted"
+msgstr ""
+
+#: Controller/UsersController.php:34;65;91
+msgid "Invalid user"
+msgstr ""
+
+#: Controller/UsersController.php:48;69
+msgid "The user has been saved"
+msgstr ""
+
+#: Controller/UsersController.php:51;72
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:94
+msgid "User deleted"
+msgstr ""
+
+#: Controller/UsersController.php:97
+msgid "User was not deleted"
+msgstr ""
+
+#: Controller/UsersController.php:106
+msgid "Invalid credentials"
+msgstr ""
+
+#: View/Elements/paging.ctp:4
+msgid "previous"
+msgstr ""
+
+#: View/Elements/paging.ctp:6
+msgid "next"
+msgstr ""
+
+#: View/Labels/add.ctp:4
+msgid "Add Label"
+msgstr ""
+
+#: View/Labels/add.ctp:10
+#: View/Labels/edit.ctp:11
+#: View/Photos/add.ctp:12
+#: View/Photos/edit.ctp:13
+#: View/Users/add.ctp:11
+#: View/Users/edit.ctp:12
+msgid "Submit"
+msgstr ""
+
+#: View/Labels/add.ctp:15
+#: View/Labels/edit.ctp:17
+#: View/Labels/view.ctp:20
+#: View/Photos/add.ctp:21
+#: View/Photos/edit.ctp:24
+#: View/Photos/index.ctp:48
+#: View/Photos/view.ctp:21
+msgid "List Labels"
+msgstr ""
+
+#: View/Labels/add.ctp:16
+#: View/Labels/edit.ctp:18
+#: View/Labels/index.ctp:34
+#: View/Labels/view.ctp:22
+#: View/Photos/add.ctp:16
+#: View/Photos/edit.ctp:19
+#: View/Photos/view.ctp:15
+#: View/Users/add.ctp:17
+#: View/Users/edit.ctp:19
+#: View/Users/index.ctp:42
+#: View/Users/view.ctp:42
+msgid "List Photos"
+msgstr ""
+
+#: View/Labels/add.ctp:17
+#: View/Labels/edit.ctp:19
+#: View/Labels/index.ctp:35
+#: View/Labels/view.ctp:23
+#: View/Photos/index.ctp:43
+#: View/Photos/view.ctp:16
+#: View/Users/add.ctp:18
+#: View/Users/edit.ctp:20
+#: View/Users/index.ctp:43
+#: View/Users/view.ctp:43
+msgid "New Photo"
+msgstr ""
+
+#: View/Labels/edit.ctp:4
+#: View/Labels/view.ctp:18
+msgid "Edit Label"
+msgstr ""
+
+#: View/Labels/edit.ctp:16
+#: View/Labels/index.ctp:17
+#: View/Photos/edit.ctp:18
+#: View/Photos/index.ctp:27
+#: View/Users/edit.ctp:17
+#: View/Users/index.ctp:25
+msgid "Delete"
+msgstr ""
+
+#: View/Labels/edit.ctp:16
+#: View/Labels/index.ctp:17
+#: View/Labels/view.ctp:19
+#: View/Photos/edit.ctp:18
+#: View/Photos/index.ctp:27
+#: View/Photos/view.ctp:14
+#: View/Users/edit.ctp:17
+#: View/Users/index.ctp:25
+#: View/Users/view.ctp:39
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View/Labels/index.ctp:2
+msgid "Labels"
+msgstr ""
+
+#: View/Labels/index.ctp:7
+#: View/Photos/index.ctp:11
+#: View/Users/index.ctp:11
+msgid "Actions"
+msgstr ""
+
+#: View/Labels/index.ctp:15
+#: View/Photos/index.ctp:25
+#: View/Users/index.ctp:23
+msgid "View"
+msgstr ""
+
+#: View/Labels/index.ctp:16
+#: View/Photos/index.ctp:26
+#: View/Users/index.ctp:24
+msgid "Edit"
+msgstr ""
+
+#: View/Labels/index.ctp:25
+#: View/Photos/index.ctp:35
+#: View/Users/index.ctp:33
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View/Labels/index.ctp:33
+#: View/Labels/view.ctp:21
+#: View/Photos/add.ctp:22
+#: View/Photos/edit.ctp:25
+#: View/Photos/index.ctp:49
+#: View/Photos/view.ctp:22
+msgid "New Label"
+msgstr ""
+
+#: View/Labels/view.ctp:2
+msgid "Label"
+msgstr ""
+
+#: View/Labels/view.ctp:4
+#: View/Users/view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: View/Labels/view.ctp:9
+msgid "Name"
+msgstr ""
+
+#: View/Labels/view.ctp:19
+msgid "Delete Label"
+msgstr ""
+
+#: View/Layouts/default.ctp:37
+msgid "Photo Blog"
+msgstr ""
+
+#: View/Photos/add.ctp:4
+msgid "Add Photo"
+msgstr ""
+
+#: View/Photos/add.ctp:17
+#: View/Photos/edit.ctp:20
+#: View/Photos/index.ctp:44
+#: View/Photos/view.ctp:17
+#: View/Users/add.ctp:16
+#: View/Users/edit.ctp:18
+#: View/Users/view.ctp:40
+msgid "List Users"
+msgstr ""
+
+#: View/Photos/add.ctp:18
+#: View/Photos/edit.ctp:21
+#: View/Photos/index.ctp:45
+#: View/Photos/view.ctp:18
+#: View/Users/index.ctp:41
+#: View/Users/view.ctp:41
+msgid "New User"
+msgstr ""
+
+#: View/Photos/add.ctp:19
+#: View/Photos/edit.ctp:22
+#: View/Photos/index.ctp:46
+#: View/Photos/view.ctp:19
+msgid "List Uploads"
+msgstr ""
+
+#: View/Photos/add.ctp:20
+#: View/Photos/edit.ctp:23
+#: View/Photos/index.ctp:47
+#: View/Photos/view.ctp:20
+msgid "New Upload"
+msgstr ""
+
+#: View/Photos/edit.ctp:4
+#: View/Photos/view.ctp:13
+msgid "Edit Photo"
+msgstr ""
+
+#: View/Photos/index.ctp:2
+msgid "Photos"
+msgstr ""
+
+#: View/Photos/view.ctp:14
+msgid "Delete Photo"
+msgstr ""
+
+#: View/Photos/rss/index.ctp:7
+msgid "Most Recent Photos"
+msgstr ""
+
+#: View/Photos/rss/index.ctp:9
+msgid "Most recent photos."
+msgstr ""
+
+#: View/Users/add.ctp:4
+msgid "Add User"
+msgstr ""
+
+#: View/Users/edit.ctp:4
+#: View/Users/view.ctp:38
+msgid "Edit User"
+msgstr ""
+
+#: View/Users/index.ctp:2
+msgid "Users"
+msgstr ""
+
+#: View/Users/login.ctp:4
+msgid "Login now"
+msgstr ""
+
+#: View/Users/login.ctp:10
+msgid "Login"
+msgstr ""
+
+#: View/Users/view.ctp:2
+msgid "User"
+msgstr ""
+
+#: View/Users/view.ctp:9
+msgid "Email"
+msgstr ""
+
+#: View/Users/view.ctp:14
+msgid "Username"
+msgstr ""
+
+#: View/Users/view.ctp:19
+msgid "Password"
+msgstr ""
+
+#: View/Users/view.ctp:24
+msgid "Created"
+msgstr ""
+
+#: View/Users/view.ctp:29
+msgid "Modified"
+msgstr ""
+
+#: View/Users/view.ctp:39
+msgid "Delete User"
+msgstr ""
+
+#: Model/Label.php:validation for field name
+#: Model/Photo.php:validation for field title;validation for field description
+#: Model/Upload.php:validation for field filename;validation for field filemime
+msgid "notempty"
+msgstr ""
+
+#: Model/Photo.php:validation for field user_id
+#: Model/Upload.php:validation for field photo_id;validation for field filesize
+msgid "numeric"
+msgstr ""
+
+#: Model/User.php:validation for field email
+msgid "Enter a valid email address"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "Username is required"
+msgstr ""
+
+#: Model/User.php:validation for field password
+msgid "Password is required"
+msgstr ""
+

@@ -34,6 +34,35 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
+	App::uses('I18nRoute', 'I18n.Routing/Route');
+	App::uses('I18nSluggableRoute', 'I18n.Routing/Route');
+
+	Router::connect('/photos/:Photo', array('controller' => 'photos', 'action' => 'view'), array(
+		'routeClass' => 'I18nSluggableRoute',
+		'models' => array('Photo')
+	));
+	Router::connect('/photos/:year/:month/:day', array('controller' => 'photos', 'action' => 'archive'), array(
+		'year' => Router::YEAR,
+		'month' => Router::MONTH,
+		'day' => Router::DAY,
+		'pass' => array('year', 'month', 'day'),
+		'routeClass' => 'I18nRoute',
+	));
+	Router::connect('/photos/:year/:month', array('controller' => 'photos', 'action' => 'archive'), array(
+		'year' => Router::YEAR,
+		'month' => Router::MONTH,
+		'pass' => array('year', 'month'),
+		'routeClass' => 'I18nRoute',
+	));
+	Router::connect('/photos/:year', array('controller' => 'photos', 'action' => 'archive'), array(
+		'year' => Router::YEAR,
+		'pass' => array('year'),
+		'routeClass' => 'I18nRoute',
+	));
+		
+
+
+
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 
  * how to customize the loading of plugin routes.
@@ -44,4 +73,4 @@
  * Load the CakePHP default routes. Remove this if you do not want to use
  * the built-in default routes.
  */
-	require CAKE . 'Config' . DS . 'routes.php';
+	//require CAKE . 'Config' . DS . 'routes.php';

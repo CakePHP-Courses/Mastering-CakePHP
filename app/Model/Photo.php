@@ -110,6 +110,24 @@ class Photo extends AppModel {
 		)
 	);
 
+	public $findMethods = array('recent' => true);
+
+	function paginateCount($conditions = array(), $recursive = 0, $extra = array()) {
+		if (!empty($extra['type']) && $extra['type'] === 'recent') {
+			//return 1000;
+		}
+		return parent::paginateCount($conditions, $recursive, $extra);
+	}
+
+	protected function _findRecent($state, $query, $results = array()) {
+		if ($state == 'before') {
+			$query['conditions']['Photo.created >='] = date('Y-m-d', strtotime('-2 days'));
+			$query['order'] = array('Photo.created' => 'desc');
+			return $query;  
+		}
+		return $results;
+	}
+
 	public function add($data) {
 		$this->create($data);
 		$this->uploadFile();

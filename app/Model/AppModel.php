@@ -4,10 +4,21 @@ App::uses('Model', 'Model');
 class AppModel extends Model {
 
 	public $actsAs = array('Containable');
-	/*
-    public function find($type = 'first', $params = array()) {
-        return $this->cacheFind($this->cachePrefix(), $type, $params);
-    }
+
+	function paginateCount($conditions = array(), $recursive = 0, $extra = array()) {
+		$parameters = compact('conditions');
+		$find = '_findCount';
+		if (isset($extra['type'])) {
+			$extra['operation'] = 'count';
+			$find = '_find' . Inflector::camelize($extra['type']);
+			$params = $this->$find('before', array_merge($parameters, $extra));
+			unset($params['fields']);
+			unset($params['limit']);
+			return $this->find('count', $params);
+		}
+		return $this->find('count', array_merge($parameters, $extra));
+	}
+
    
     protected function cachePrefix() {
         $plugin = $this->plugin ? $this->plugin . '.' : '';
@@ -36,5 +47,5 @@ class AppModel extends Model {
         }
         return parent::_clearCache();
     }
-	*/
+	
 }

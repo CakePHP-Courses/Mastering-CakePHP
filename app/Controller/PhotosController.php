@@ -7,6 +7,11 @@ App::uses('AppController', 'Controller');
  */
 class PhotosController extends AppController {
 
+	public $components = array(
+		'Paginator' => array(
+			'settings' => array('recent')
+		)
+	);
 
 /**
  * index method
@@ -16,6 +21,28 @@ class PhotosController extends AppController {
 	public function index() {
 		$this->Photo->recursive = 0;
 		$this->set('photos', $this->paginate());
+	}
+
+	public function archive($year, $month = null, $day = null) {
+		if (empty($month)) {
+			$month = '01';
+			$yearBondary = intval($year) + 1;
+		}
+		if (empty($day)) {
+			$day = '01';
+			$monthBoundary = str_pad(max(1, ((intval($month) + 1) % 13)), 2, '0', STR_PAD_LEFT);
+		}
+
+			$conditions['Photo.created <'] = sprintf('%s-%s-%s 00:00:00', 
+				isset($yearBondary) ? $yearBondary : $year,
+				isset($monthBoundary) ? $monthBoundary : $month,
+				isset($monthBoundary) ? $day : str_pad(max(1, ((intval($day) + 1) % 31)), 2, '0', STR_PAD_LEFT)
+			);
+
+		$conditions['Photo.created >='] = sprintf('%s-%s-%s', $year, $month, $day);
+		$this->Paginator->settings = compact('conditions');
+		$this->set('photos', $this->paginate());
+		$this->render('index');
 	}
 
 /**
